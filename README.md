@@ -1,6 +1,7 @@
 
 '''python
-def validasi_pendaftaran(nama, nomor_telepon, email):
+
+    #def validasi_pendaftaran(nama, nomor_telepon, email):
     errors = []
     
     # Validasi nama (hanya huruf dan spasi)
@@ -32,6 +33,7 @@ def validasi_pendaftaran(nama, nomor_telepon, email):
     validasi_pendaftaran(nama, nomor_telepon, email)
 
 
+Penjelasan 
 1. Validasi Nama
    Untuk memastikan hanya huruf dan spasi yang diperbolehkan, gunakan replace(" ", "").isalpha()
 2. Pengesahan Nomor Telepon
