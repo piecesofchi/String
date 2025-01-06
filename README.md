@@ -23,14 +23,14 @@ def validasi_pendaftaran(nama, nomor_telepon, email):
     else:
         print("Data pendaftaran valid.")
 
-# Contoh input pengguna
-nama = input("Masukkan nama lengkap: ")
-nomor_telepon = input("Masukkan nomor telepon: ")
-email = input("Masukkan email: ")
+    # Contoh input pengguna
+    nama = input("Masukkan nama lengkap: ")
+    nomor_telepon = input("Masukkan nomor telepon: ")
+    email = input("Masukkan email: ")
+    
+    # Panggil fungsi validasi
+    validasi_pendaftaran(nama, nomor_telepon, email)
 
-# Panggil fungsi validasi
-validasi_pendaftaran(nama, nomor_telepon, email)
-'''
 
 1. Validasi Nama
    Untuk memastikan hanya huruf dan spasi yang diperbolehkan, gunakan replace(" ", "").isalpha()
