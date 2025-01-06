@@ -1,7 +1,5 @@
 
 '''python
-import re
-
 def validasi_pendaftaran(nama, nomor_telepon, email):
     errors = []
     
@@ -32,3 +30,14 @@ email = input("Masukkan email: ")
 
 # Panggil fungsi validasi
 validasi_pendaftaran(nama, nomor_telepon, email)
+'''
+
+1. Validasi Nama
+   Untuk memastikan hanya huruf dan spasi yang diperbolehkan, gunakan replace(" ", "").isalpha()
+2. Pengesahan Nomor Telepon
+   Menggunakan isdigit() untuk memastikan bahwa hanya angka yang diizinkan
+3. Verifikasi email
+   Untuk memastikan format email yang valid (mengandung @ dan. dengan posisi yang sesuai), gunakan ekspresi reguler re.match().
+4. Keputusan Validasi
+   -Program mencetak daftar kesalahan jika terjadi kesalahan.
+   -Program mencetak pesan "Data pendaftaran valid" jika semua validasi berhasil.
